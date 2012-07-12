@@ -8,8 +8,8 @@ object ScalateGenerateBuild extends Build {
     
   val buildSettings = Defaults.defaultSettings ++ Seq(
     version := buildVersion,
-    scalaVersion := "2.9.1",
-    crossScalaVersions := Seq("2.9.1", "2.9.0-1", "2.9.0", "2.9.1-1"),
+    scalaVersion := "2.9.2",
+    crossScalaVersions := Seq("2.9.2", "2.9.1", "2.9.0-1", "2.9.0", "2.9.1-1"),
     organization := "com.mojolly.scalate",
     externalResolvers <<= resolvers map { rs => Resolver.withDefaultResolvers(rs, mavenCentral = true, scalaTools = false) },
     publishTo <<= version { (v: String) =>
